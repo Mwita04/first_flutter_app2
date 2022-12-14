@@ -1,5 +1,4 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -10,16 +9,10 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
-        title: Text(
-          'Dashboard'.toUpperCase(),
-        ),
+        title: Text('Dashboard'),
       ),
-      body: Center(child: Text('Random value is : ${getNumber()}')),
+      body: Image.asset("images/nduthi.png",
+          width: 200.0, height: 800.0, fit: BoxFit.contain),
     );
   }
-}
-
-int getNumber() {
-  return Random().nextInt(100);
 }
