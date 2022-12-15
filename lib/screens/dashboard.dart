@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -8,11 +9,17 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Dashboard'),
+      backgroundColor: Colors.lightGreen,
+      body: Center(
+        child: IconButton(
+          icon: Icon(FontAwesomeIcons.codeMerge),
+          onPressed: () {},
+          iconSize: 100,
+          color: Colors.lightGreenAccent,
+          splashColor: Colors.white,
+          highlightColor: Colors.red,
+        ),
       ),
-      body: Image.asset("images/nduthi.png",
-          width: 200.0, height: 800.0, fit: BoxFit.contain),
     );
   }
 }
