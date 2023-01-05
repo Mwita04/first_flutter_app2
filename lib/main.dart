@@ -1,4 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutable
+import 'package:first_flutter_app/screens/Home.dart';
+
 import 'screens/Dashboard.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'My Flutter App',
       themeMode: ThemeMode.system, //sets theme to be used by app
       debugShowCheckedModeBanner: false,
-      home: Dashboard(),
+      home: Home(),
     );
   }
 }
